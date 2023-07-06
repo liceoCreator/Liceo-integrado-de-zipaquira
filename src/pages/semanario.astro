@@ -1,0 +1,61 @@
+---
+import Base from '../layouts/BaseLayout.astro'
+import weeks from '../config/weekly.json'
+---
+<Base title='Semanario' description='Lee nuestro semanario educativo y descubre las actividades que realizamos. Formamos líderes con habilidades y valores para trascender en la sociedad.' url='/semanario'>
+    <section>
+        <div class="flex flex-col items-center justify-center gap-8 min-h-[20rem] p-11 text-center text-blue-950">
+            <h3 class="text-3xl">SEMANARIO</h3>
+            {
+                weeks.map((week) => (
+                    week.subtitle? <h4>{week.subtitle}</h4> : ''
+                ))
+            }
+            {
+                weeks.map((week) => (
+                    week.description? <p class="font-light">{week.description}</p> : ''
+                ))
+            }
+        </div>
+        <div class="flex flex-col text-blue-950 px-7 pb-11 md:w-4/5 md:mx-auto">
+            {
+                weeks.map((week) => (
+                    <>
+                        {
+                            week.content.map((day) => (
+                                <div class="flex flex-col gap-3 px-4 py-3 border-b border-blue-950">
+                                    <input type="checkbox" id={`open${day.date[1]}`} class="hidden peer"/>
+                                    <label for={`open${day.date[1]}`} class="flex peer-checked:[&_svg:nth-child(2)]:hidden peer-checked:[&_svg:last-child]:block cursor-pointer">
+                                        <h5 class="text-xl">{day.date[0]} {day.date[1]}</h5>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#172554" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#172554" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up hidden"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                                    </label>
+                                    <div class="hidden font-light peer-checked:block">
+                                        <div>
+                                            <p><span>Primera hora:</span> {day["1hour"]}</p>
+                                        </div>
+                                        <div>
+                                            <p>Segunda hora: {day["2hour"]}</p>
+                                        </div>
+                                        <div>
+                                            <p>Tercera hora: {day["3hour"]}</p>
+                                        </div>
+                                        <div>
+                                            <p>Cuarta hora: {day["4hour"]}</p>
+                                        </div>
+                                        <div>
+                                            <p>Quinta hora: {day["5hour"]}</p>
+                                        </div>
+                                        <div>
+                                            <p>Sexta hora:{day["6hour"]}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </>
+                ))
+            }
+        </div>
+    </section>
+</Base>

@@ -1,0 +1,90 @@
+---
+import Base from "../../layouts/BaseLayout.astro";
+const areas = await Astro.glob("./area/*.md");
+---
+
+<Base
+    title="Academia"
+    description="Conoce nuestras áreas educativas, los profesores que las conforman, el plan de estudios y la metodología de nuestra institución. ¡Lleva al liceo en tu corazón!"
+    url="/academia"
+>
+    <section>
+        <div
+            class="flex flex-col gap-3 items-center justify-center text-blue-950 text-center p-11 h-80 min-h-max md:pt-4 md:pb-2"
+        >
+            <h3 class="text-3xl font-medium md:text-4xl">ACADEMIA</h3>
+            <p class="font-light md:w-1/2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat quibusdam laborum sint quas, adipisci nostrum, ducimus
+                dolores nulla, rem beatae iure eius natus? Consectetur cumque
+                eius nihil, sequi id vel.
+            </p>
+        </div>
+        <div class="bg-white md:w-[90%] md:mx-auto md:grid md:grid-cols-fit2 md:mt-16 md:relative md:z-10">
+            {
+                areas.map((area) => (
+                    <div class="flex flex-col md:flex-row">
+                        <>
+                            <div class=" w-full min-h-[20rem] md:h-auto md:order-2 md:w-1/2">
+                                <img
+                                    src={area.frontmatter.urlImg}
+                                    alt="#"
+                                    class="object-cover w-auto h-full"
+                                />
+                            </div>
+                            <div
+                                class={`flex flex-col justify-center items-center gap-5 w-full min-h-[20rem] ${
+                                    area.frontmatter.id == "26" ||
+                                    area.frontmatter.id == "27" ||
+                                    area.frontmatter.id == "30" ||
+                                    area.frontmatter.id == "31" ||
+                                    area.frontmatter.id == "34" ||
+                                    area.frontmatter.id == "35"
+                                        ? "bg-white text-blue-950 md:order-2"
+                                        : "bg-blue-950 text-white md:order-1"
+                                } p-11 text-center md:w-1/2 md:justify-start md:items-start md:text-left`}
+                            >
+                                <>
+                                    <h4 class="text-2xl">
+                                        {area.frontmatter.title}
+                                    </h4>
+                                    <>
+                                        <p class="font-light">
+                                            {area.frontmatter.description}
+                                        </p>
+                                        <a
+                                            href={area.url}
+                                            class="bg-blue-600 py-1.5 px-6 text-white border border-blue-600 hover:bg-transparent hover:text-blue-600 duration-300"
+                                        >
+                                            Más informacion
+                                        </a>
+                                    </>
+                                </>
+                            </div>
+                        </>
+                    </div>
+                ))
+            }
+        </div>
+        <div
+            class="flex flex-col justify-center items-center gap-5 p-11 text-center text-blue-950 md:h-80"
+        >
+            <h3 class="text-3xl">MANUAL DE CONVIVENCIA</h3>
+            <p class="md:w-3/5">
+                Es un documento que establece las normas, valores y principios
+                que rigen la convivencia en nuestra institución educativa.
+                Contiene pautas claras y coherentes para regular las relaciones
+                entre todos los miembros de la comunidad educativa, promoviendo
+                el respeto, la responsabilidad y el buen trato. El manual de
+                convivencia busca crear un ambiente seguro, inclusivo y propicio
+                para el aprendizaje, facilitando la resolución pacífica de
+                conflictos y fomentando el desarrollo integral de los
+                estudiantes. Ver <a
+                    href="#"
+                    class="underline decoration-solid hover:text-blue-600 active:text-blue-600"
+                    >aquí.</a
+                >
+            </p>
+        </div>
+    </section>
+</Base>

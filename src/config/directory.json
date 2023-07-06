@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Sandra Rocío",
+        "lastname": "Suavita Menjura",
+        "position": "Rectora",
+        "mail": "sandra.suavita@liceointegrado.edu.co",
+        "parentsCareDays": "Martes y Jueves",
+        "parentsCareHours": "7:00 am a 9:00 am",
+        "urlImg" : "/sin-perfil.jpg"
+    },
+    {
+        "name": "Luz Ángela",
+        "lastname": "Cruz Morales",
+        "position": "Coordinadora grado 6° y 9°",
+        "mail": "luz.cruz@liceointegrado.edu.co",
+        "parentsCareDays": "Martes y Jueves",
+        "parentsCareHours": "7:30 am a 9:30 am",
+        "urlImg" : "/sin-perfil.jpg"
+    },
+    {
+        "name": "Patricia Forero",
+        "lastname": "Poveda",
+        "position": "Coordinadora Preescolar y Primaria",
+        "mail": "patricia.forero.po@liceointegrado.edu.co",
+        "parentsCareDays": "Martes y Jueves",
+        "parentsCareHours": "7:30 am a 9:30 am",
+        "urlImg" : "/sin-perfil.jpg"
+    },
+    {
+        "name": "José de Jesús",
+        "lastname": "Murcia",
+        "position": "Coordinador grado 7° y 8°",
+        "mail": "jose.murcia@liceointegrado.edu.co",
+        "parentsCareDays": "Lunes y Viernes",
+        "parentsCareHours": "7:30 am a 9:30 am",
+        "urlImg" : "/sin-perfil.jpg"
+    },
+    {
+        "name": "Ilma Ruth",
+        "lastname": "García Arévalo",
+        "position": "Coordinadora grado 9°, 10° y 11°",
+        "mail": "ilma.garcia@liceointegrado.edu.co",
+        "parentsCareDays": "Lunes y Miercoles",
+        "parentsCareHours": "7:30 am a 9:30 am",
+        "urlImg" : "/sin-perfil.jpg"
+    },
+    {
+        "name": "Doris Margarita",
+        "lastname": "Algarra Echenique",
+        "position": "Orientadora Escolar",
+        "mail": "doris.algarra@liceointegrado.edu.co",
+        "parentsCareDays": "Martes y Jueves",
+        "parentsCareHours": "7:00 am a 9:00 am",
+        "urlImg" : "/sin-perfil.jpg"
+    }
+]

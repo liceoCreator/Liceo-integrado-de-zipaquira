@@ -1,0 +1,43 @@
+---
+import Base from '../layouts/BaseLayout.astro'
+import Search from '../components/Search'
+const pb = await Astro.glob('../pages/noticias/publicaciones/*.md')
+const ar = await Astro.glob('../pages/academia/area/*.md')
+const sd = await Astro.glob('../pages/acerca-de/sedes/*.md')
+const rm = await Astro.glob('../pages/alumnos/ramas/*.md')
+const arr1 = pb.map(md => ({
+    "page": md.frontmatter.title,
+    "content": md.frontmatter.description,
+    "url": md.url,
+    "id": md.frontmatter.id,
+    "author": md.frontmatter.author
+}))
+const arr2 = ar.map(md => ({
+    "page": md.frontmatter.title,
+    "content": md.frontmatter.description,
+    "url": md.url,
+    "id": md.frontmatter.id,
+    "author": ""
+}))
+const arr3 = sd.map(md => ({
+    "page": md.frontmatter.title,
+    "content": md.frontmatter.description,
+    "url": md.url,
+    "id": md.frontmatter.id,
+    "author": ""
+}))
+const arr4 = rm.map(md => ({
+    "page": md.frontmatter.title,
+    "content": md.frontmatter.description,
+    "url": md.url,
+    "id": md.frontmatter.id,
+    "author": ""
+}))
+const array = arr1.concat(arr2, arr3, arr4)
+---
+<Base title="Buscar" description=" ">
+    <section>
+        <h3>RESULTADOS DE BÚSQUEDA</h3>
+        <Search client:only="react" slot={array}/>
+    </section>
+</Base>

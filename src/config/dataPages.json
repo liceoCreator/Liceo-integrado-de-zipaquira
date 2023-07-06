@@ -1,0 +1,68 @@
+[
+    {
+        "page": "Inicio - Portal",
+        "content": "Explora el nuevo portal web de la secretaria de Educación de Zipaquirá, una herramienta moderna y fácil de usar para almacenar y gestionar información de estudiantes. Descarga tu carnet estudiantil o tus boletines.",
+        "url": "/",
+        "id": "1"
+    },
+    {
+        "page": "Academia - Áreas - Docentes",
+        "content": "Conoce nuestras áreas educativas, los profesores que las conforman, el plan de estudios y la metodología de nuestra institución.",
+        "url": "/academia",
+        "id": "2"
+    },
+    {
+        "page": "Acerca de - Visión - Misión - Símbolos - Himno - Directorio - Sedes",
+        "content": "Descubre la historia, visión, misión y valores de nuestra institución educativa, nuestras sedes y nuestro equipo directivo: coordinadores, la rectora y la orientadora.",
+        "url": "/acerca-de",
+        "id": "3"
+    },
+    {
+        "page": "Noticias",
+        "content": "Mantente al tanto de las ultimas noticias de nuestra institución.",
+        "url": "/noticias",
+        "id": "4"
+    },
+    {
+        "page": "Todas las noticias",
+        "content": "Descubre todas las noticias de nuestra institución.",
+        "url": "/noticias/todas-las-noticias",
+        "id": "5"
+    },
+    {
+        "page": "Semanario - Día",
+        "content": "Mantente al tanto de las actividades que deparan esta semana",
+        "url": "/semanario",
+        "id": "6"
+    },
+    {
+        "page": "Alumnos - Estudiantes",
+        "content": "El liceo integrado se enorgullece por tener estudiantes aptos y comprometidos. Participa en nuestro blog institucional con tu correo @liceointegrado.edu.co",
+        "url": "/alumnos",
+        "id": "7"
+    },
+    {
+        "page": "Gobierno Escolar - Elecciones - Candidatos",
+        "content": "Practica democrática y pedagógica, conformado por: consejo directivo, consejo académico, consejo de padres y consejo estudiantil",
+        "url": "/alumnos/gobierno-escolar",
+        "id": "8"
+    },
+    {
+        "page": "Padres - Para los padres - Horarios de atención",
+        "content": "",
+        "url": "/padres",
+        "id": "9"
+    },
+    {
+        "page": "Contacto - Dirección - Biblioteca - Secretaria - Pagaduría",
+        "content": "¿Tienes preguntas? Contáctanos para recibir información sobre nuestra institución educativa",
+        "url": "/contacto",
+        "id": "10"
+    },
+    {
+        "page": "Calidad",
+        "content": "Ofrecemos y garantizamos un servicio educativo integral de calidad, orientados hacia la formación de estudiantes con pensamiento crítico y creativo",
+        "url": "/calidad",
+        "id": "11"
+    }
+]

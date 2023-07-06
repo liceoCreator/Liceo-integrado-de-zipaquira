@@ -1,0 +1,59 @@
+---
+import Base from "../layouts/BaseLayout.astro";
+const posts = await Astro.glob('./noticias/publicaciones/*.md')
+const thPosts = posts.filter(post => post.frontmatter.numNotice <= 3)
+---
+
+<Base title='IEM Liceo Integrado de Zipaquirá' description='Desarrollamos habilidades y valores para trascender en la sociedad. Formamos líderes con pensamiento crítico y creativo en nuestra institución educativa.' url='/'>
+    <section>
+        <div class="flex flex-col justify-center items-center gap-2 w-full h-80 min-h-max p-11 bg-blue-600 text-white text-center md:absolute md:w-2/5 md:text-left md:items-start md:left-20 md:-bottom-14">
+            <h3 class="text-3xl font-medium md:text-4xl">Nos Alegra tenerlos aquí</h3>
+            <p class="text-2xl md:text-3xl">Bienvenidos todos<br>familia escolar</p>
+            <a href="/acerca-de" class="bg-blue-950 py-1.5 px-6 text-sm border border-blue-950 hover:bg-transparent hover:border-white duration-300 md:text-base md:mx-0 md:my-4 md:py-2">Entorno educativo</a>
+        </div>
+        <div class="bg-[url('https://images.pexels.com/photos/5554303/pexels-photo-5554303.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-cover w-full h-80 md:h-screen">
+        </div>
+    </section>
+    <section>
+        <div class="flex flex-col justify-center items-center gap-3 w-full h-80 min-h-max p-11 text-center text-blue-950">
+            <h3 class="text-2xl md:text-3xl">MÁS DE 85 AÑOS EN LA EDUCACIÓN</h3>
+            <p class="text-base font-light md:w-1/2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quisquam facere consequuntur perspiciatis ea, eos beatae cupiditate minus delectus itaque?</p>
+        </div>
+        <div class="w-full md:min-h-screen md:flex md:flex-col md:items-center">
+            <div class="flex flex-col md:flex-row md:w-[90%] md:h-5/6">
+                <div class="bg-[url('https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-cover order-2 w-full h-80 md:order-1 md:w-1/2 md:h-auto">
+                </div>
+                <div class="flex flex-col justify-center items-center gap-3 w-full min-h-max p-11 bg-blue-950 text-white text-center md:order-2 md:w-1/2 md:gap-7 md:p-12">
+                    <h4 class="text-2xl text-blue-400 md:text-3xl">Portal Académico</h4>
+                    <p class="text-base font-light md:text-lg">Explora el nuevo portal web de la Secretaría de Educación de Zipaquirá, una herramienta moderna y fácil de usar para almacenar y gestionar información de estudiantes. Descarga tu carnet estudiantil o tus boletines. </p>
+                    <a href="https://gssoftwareysoluciones.com/2022/?view=login" class="bg-blue-600 py-1.5 px-6 m-4 text-sm duration-300 border border-blue-600 hover:bg-transparent hover:border-white md:text-base">Ir al portal</a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row md:w-[90%] md:h-5/6">
+                <div class="bg-[url('https://images.pexels.com/photos/5212338/pexels-photo-5212338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-cover order-2 w-full h-80 md:w-1/2 md:h-auto">
+                </div>
+                <div class="flex flex-col justify-center items-center gap-3 w-full min-h-max p-11 bg-blue-950 text-white text-center md:w-1/2 md:gap-7 md:p-12">
+                    <h4 class="text-2xl text-blue-400 md:text-3xl">Calidad</h4>
+                    <p class="text-base font-light md:text-lg">Nuestro proposito es ofrecer educación integral de calidad, formar estudiantes con pensamiento crítico y creativo, desarrollar habilidades y competencias, construir su proyecto de vida con valores institucionales.</p>
+                    <a href="/calidad" class="bg-blue-600 py-1.5 px-6 m-4 text-sm duration-300 border border-blue-600 hover:bg-transparent hover:border-white md:text-base">Más información</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="flex flex-col justify-center items-center p-7 gap-10 text-white md:my-10">
+            <h3 class="text-2xl text-blue-600 md:text-3xl">ÚLTIMAS NOTICIAS</h3>
+            <div class="flex flex-col gap-14 w-full items-center md:flex-row md:flex-wrap md:justify-evenly">
+            {
+                thPosts.map((thPost) => (
+                    <div style={`background: url(${thPost.frontmatter.urlImg}); background-size: cover;`} class="relative flex flex-col w-4/5 h-80 justify-between p-6 before:absolute before:inset-0 before:bg-black/30 md:w-96">
+                        <h5 class="z-10">{thPost.frontmatter.date}</h5>
+                        <a href={thPost.url} class="z-10 py-3 border-b-2 border-white text-2xl font-medium hover:text-blue-200">{thPost.frontmatter.title}<br/><span class="text-base font-normal">{thPost.frontmatter.author}</span></a>
+                    </div>
+                ))
+            }
+            </div>
+            <a href="/noticias/todas-las-noticias" class="bg-blue-600 p-2 duration-300 border border-blue-600 hover:bg-transparent hover:border-blue-950 hover:text-blue-950">Todas las noticas</a>
+        </div>
+    </section>
+</Base>

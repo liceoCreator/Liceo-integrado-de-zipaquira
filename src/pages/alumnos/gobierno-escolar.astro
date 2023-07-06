@@ -1,0 +1,158 @@
+---
+import Base from "../../layouts/BaseLayout.astro";
+const branches = await Astro.glob("./ramas/*.md");
+---
+
+<Base
+    title="Gobierno Escolar"
+    description="Conoce el gobierno escolar la practica democrática y pedagógica que contribuye al mejoramiento de los procesos que se llevan a cabo en la institución."
+>
+    <section>
+        <h3>GOBIERNO ESCOLAR</h3>
+        <p>
+            El Gobierno Escolar como práctica democrática y pedagógica,
+            contribuye en el mejoramiento de los diferentes procesos que se
+            llevan a cabo en la institución, en beneficio del mejoramiento de la
+            educación y de la formación integral de las y los estudiantes
+            liceístas. (Decreto 1860 de la Ley 115 o Ley General de Educación de
+            1994).
+        </p>
+        <p>
+            El gobierno escolar está conformado por:
+            <a href={branches[2].url}>{branches[2].frontmatter.title}</a>,
+            <a href={branches[0].url}>{branches[0].frontmatter.title}</a>,
+            <a href={branches[1].url}>{branches[1].frontmatter.title}</a> y
+            <a href={branches[3].url}>{branches[3].frontmatter.title}</a>.
+        </p>
+        <div>
+            <h4>Procesos de elección de estudiantes al gobierno escolar</h4>
+            <p>
+                El gobierno escolar deberá estar conformado dentro de los
+                primeros treinta días del calendario, siguientes a la iniciación
+                de clases. El área de Ciencias Sociales, a través de su
+                representante en el consejo académico será el encargado de
+                organizar, programar y evaluar dicho proceso con el apoyo del
+                comité electoral.
+            </p>
+            <h5>Comité Electoral</h5>
+            <p>
+                Será el que organice el proceso electoral, garantice la
+                transparencia del sufragio y fije las Condiciones y
+                procedimientos para las elecciones. Estará conformado por:
+                <ol>
+                    <li>Un representante de los estudiantes.</li>
+                    <li>Un representante de los docentes.</li>
+                    <li>Un representante de área de Ciencias Sociales.</li>
+                    <li>Dos representantes de las directivas del colegio</li>
+                </ol>
+            </p>
+            <h5>Funciones del Comité Electoral</h5>
+            <p>
+                <ul>
+                    <li>
+                        Organizar las elecciones del personero y del
+                        representante de los estudiantes por curso al Consejo de
+                        Estudiantes.
+                    </li>
+                    <li>Recibir las inscripciones de los candidatos.</li>
+                    <li>
+                        Diseñar formularios de inscripción y tarjetones de los
+                        candidatos y delegados.
+                    </li>
+                    <li>
+                        Delegar funciones a los estudiantes que ejercen como
+                        delegados electorales.
+                    </li>
+                    <li>
+                        Trazar el cronograma de elecciones, los reglamentos y
+                        las pautas para garantizar el sufragio y proporcionar
+                        espacios para presentar a los candidatos.
+                    </li>
+                    <li>
+                        Designar como jurado de votación al director de grupo de
+                        cada uno de los cursos teniendo en cuenta que esta
+                        votación se realiza de manera virtual en el aula máxima.
+                    </li>
+                    <li>Realizar los escrutinios.</li>
+                    <li>
+                        Levantar un acta firmada por los integrantes del comité
+                        electoral.
+                    </li>
+                </ul>
+            </p>
+            <h4>
+                Proceso de inscripción de candidatos a personero, contralor y
+                consejo estudiantil
+            </h4>
+            <p>
+                <ol>
+                    <li>
+                        El representante del curso se elegirá bajo la
+                        orientación del profesor director de grupo y Formara
+                        parte del consejo estudiantil.
+                    </li>
+                    <li>
+                        Los candidatos a personero y contralor, deberán
+                        presentar su formulario y proyecto de trabajo por
+                        escrito ante el comité electoral quien recibirá su
+                        inscripción y verificara los requisitos consignados en
+                        el presente manual.
+                    </li>
+                    <li>
+                        El personero y el contralor se elegirá en una jornada
+                        con la participación de todos los estudiantes.
+                    </li>
+                </ol>
+            </p>
+            <h5>Requisitos de los Candidatos</h5>
+            <p>
+                <ol>
+                    <li>
+                        Ser estudiante regular matriculado para el año lectivo
+                        correspondiente.
+                    </li>
+                    <li>Inscribir candidatura ante el comité electoral.</li>
+                    <li>Cumplir el perfil del estudiante liceísta.</li>
+                    <li>
+                        Los candidatos deberán tener una antigüedad mínima de 2
+                        años en el colegio con el fin, de que se haya apropiado
+                        de la identidad con los valores promulgados por el
+                        mismo.
+                    </li>
+                    <li>
+                        Para el caso del personero, además de lo anterior, debe
+                        cursar el último año que ofrezca la Institución.
+                    </li>
+                </ol>
+            </p>
+            <h5>Elecciones</h5>
+            <p>
+                <ol>
+                    <li>
+                        Los candidatos por curso al consejo estudiantil se
+                        elegirán en cada caso con la asesoría de los directores
+                        de grupo.
+                    </li>
+                    <li>
+                        Para la elección del personero, contralor y
+                        representante de curso, los candidatos presentarán sus
+                        programas a la comunidad estudiantil y realizarán
+                        campañas para darlas a conocer.
+                    </li>
+                    <li>
+                        El día de la jornada electoral se dispondrá del aula
+                        máxima en la cual estarán ubicados los cursos con su
+                        director de grupo el cual tendrá la orientación sobre la
+                        manera como debe ingresar su voto cada uno de los
+                        estudiantes.
+                    </li>
+                    <li>
+                        Para poder ejercer el derecho al voto y enriquecer el
+                        ejercicio de los estudiantes, deberán presentar su carné
+                        estudiantil.
+                    </li>
+                </ol>
+            </p>
+        </div>
+    </section>
+</Base>

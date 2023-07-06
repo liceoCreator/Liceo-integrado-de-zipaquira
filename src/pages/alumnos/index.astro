@@ -1,0 +1,37 @@
+---
+import Base from '../../layouts/BaseLayout.astro'
+const branches = await Astro.glob('./ramas/*.md')
+
+---
+<Base title='Alumnos' description='Descubre cómo nuestra institución educativa te forma como líder con pensamiento crítico y creativo. Encuentra información relevante para alumnos.' url='/alumnos'>
+    <section>
+        <div class="flex flex-col justify-center items-center gap-3 min-h-[20rem] p-11 text-center text-blue-950">
+            <h3 class="text-3xl">ALUMNOS</h3>
+            <p class="font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magnam qui nisi repellendus earum fuga eveniet. Recusandae alias sequi a vel consectetur, dolores eos rem quod iusto nisi, animi minima?</p>
+        </div>
+        <div>
+            <div>
+                <div class="flex flex-col gap-5 p-11 bg-blue-600 text-white text-center">
+                    <h4 class="text-2xl text-blue-950">Gobierno Escolar</h4>
+                    <p class="font-light">El Gobierno Escolar como práctica democrática y pedagógica, contribuye en el mejoramiento de los diferentes procesos que se llevan a cabo en la institución, en beneficio del mejoramiento de la educación y de la formación integral de las y los estudiantes liceístas. (Decreto 1860 de la Ley 115 o Ley General de Educación de 1994).</p>
+                    <p class="font-light">El gobierno escolar está conformado por: <a href={branches[2].url} class="underline decoration-solid hover:text-blue-950 duration-300">{branches[2].frontmatter.title}</a>, <a href={branches[0].url} class="underline decoration-solid hover:text-blue-950 duration-300">{branches[0].frontmatter.title}</a>, <a href={branches[1].url} class="underline decoration-solid hover:text-blue-950 duration-300">{branches[1].frontmatter.title}</a> y <a href={branches[3].url} class="underline decoration-solid hover:text-blue-950 duration-300">{branches[3].frontmatter.title}</a>.</p>
+                    <a href="/alumnos/gobierno-escolar" class="bg-blue-950 max-w-[12rem] py-1.5 px-4 my-6 mx-auto duration-300 border border-blue-950 hover:bg-transparent hover:border-white">Más información</a>
+                </div>
+                <div class="w-full min-h-[20rem]"><img src="https://images.pexels.com/photos/8845958/pexels-photo-8845958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="gobierno-escolar" class="object-cover"></div>
+            </div>
+            <div>
+                <div class="flex flex-col gap-5 p-11 text-blue-950 text-center">
+                    <h4 class="text-2xl text-blue-950">Después de Clases</h4>
+                    <p class="font-light">
+                       Unete a nuestro blog institucional con tu correo @liceointegrado.edu.co para estar al tanto de las publicaciones e interes de tus profesores.
+                    </p>
+                    <p class="font-light">
+                        Si no tienes correo institucional dirigete <a href="#">aqui</a> para pedir la creacion del tuyo.
+                    </p>
+                    <a href="#" class="bg-blue-950 max-w-[12rem] py-1.5 px-4 my-6 mx-auto duration-300 border border-blue-950 hover:bg-transparent text-white hover:text-blue-950">Blog</a>
+                </div>
+                <div class="w-full min-h-[20rem]"><img src="https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="logo-blog" class="object-cover"></div>
+            </div>
+        </div>
+    </section>
+</Base>

@@ -1,0 +1,54 @@
+[
+    {
+        "subtitle": "Semana del 10 a 14 de Enero",
+        "description": "Semana de campaña para personero/a y contralor/a",
+        "month": "Ene",
+        "content": [
+            {
+                "date": ["Lunes", "10"],
+                "1hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "2hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "3hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "4hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "5hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "6hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+                "date": ["Martes", "11"],
+                "1hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "2hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "3hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "4hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "5hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "6hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+                "date": ["Miercoles", "12"],
+                "1hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "2hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "3hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "4hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "5hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "6hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+                "date": ["Jueves", "13"],
+                "1hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "2hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "3hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "4hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "5hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "6hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+                "date": ["Viernes", "14"],
+                "1hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "2hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "3hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "4hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "5hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                "6hour": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            }
+        ]
+    }   
+]
