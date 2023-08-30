@@ -4,11 +4,13 @@ import Table from '../components/Table-parents.astro'
 ---
 <Base title='Padres' description='Recibe información sobre la educación de tus hijos y los horarios de atención de los profesores. Formamos líderes con habilidades y valores para trascender en la sociedad.' url='/padres'>
     <section>
-        <h3>PARA LOS PADRES</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, blanditiis. Aliquid fugit maxime ratione possimus autem cum, ipsum at veniam explicabo nobis? Exercitationem, vero reprehenderit itaque voluptatum eius consequuntur? Veniam?</p>
-        <div>
-            <table>
-                <caption>Horario de atención a Padres</caption>
+        <div class="flex flex-col justify-center items-center text-center gap-5 h-80 p-10 text-blue-950 md:pb-5 md:pt-20 md:h-auto">
+            <h3 class="text-3xl md:text-4xl">PARA LOS PADRES</h3>
+            <p class="font-light md:w-1/2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, blanditiis. Aliquid fugit maxime ratione possimus autem cum, ipsum at veniam explicabo nobis? Exercitationem, vero reprehenderit itaque voluptatum eius consequuntur? Veniam?</p>
+        </div>
+        <div class="flex flex-col justify-center items-center text-blue-950 mb-10"> 
+            <table class="table-fixed w-11/12 md:w-4/5">
+                <caption class="text-2xl m-10 md:text-3xl">Horario de atención a Padres</caption>
                 <Table/>
             </table>
         </div>
