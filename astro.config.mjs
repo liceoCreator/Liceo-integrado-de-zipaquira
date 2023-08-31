@@ -8,6 +8,4 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   integrations: [react(), tailwind()],
-  site: 'https://liceoCreator.github.io',
-  base: '/Liceo-integrado-de-zipaquira',
 });
