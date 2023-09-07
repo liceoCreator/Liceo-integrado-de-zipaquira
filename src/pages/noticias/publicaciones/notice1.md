@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/BaseLayout.astro
+layout: ../../../layouts/BaseLayoutInMd.astro
 numNotice: 1
 date: 26 may 2023
 title: Nueva pagina institucional
@@ -9,6 +9,6 @@ urlImg: https://images.pexels.com/photos/5077049/pexels-photo-5077049.jpeg?auto=
 id: 21
 ---
 
-# Notice 1
+# Nueva pagina intitucional
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
