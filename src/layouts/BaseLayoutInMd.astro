@@ -1,9 +1,9 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import '../styles/md.css'
 const {frontmatter} = Astro.props
 ---
-
 <html lang="es">
 	<head>
 		<meta charset="utf-8" />
@@ -20,19 +20,21 @@ const {frontmatter} = Astro.props
 		<main>
 			<Header/>
 			<div class="text-blue-950">
-				<div>
+				<div class="mb-5">
 					<div class="bg-blue-600 p-5 text-white">
-						<p>Noticia</p>
+						<p class="font-normal">Noticia</p>
 					</div>
 					<div class="flex flex-col gap-5 p-5">
 						<div class="">
-							<a href="/noticias/todas-las-noticias" class="hover:text-blue-600">Todas las entradas</a> / <a href="/noticias" class="hover:text-blue-600">Últimas noticias</a>
+							<a href="/noticias/todas-las-noticias" class="hover:text-blue-600">Todas las entradas</a> <span class="text-blue-600">/</span> <a href="/noticias" class="hover:text-blue-600">Últimas noticias</a>
 						</div>
 						<div>
-							<p>{frontmatter.author}</p>
-							<p>{frontmatter.date}</p>
+							<p class="font-normal">{frontmatter.author}</p>
+							<p class="font-normal">{frontmatter.date}</p>
 						</div>
-						<slot/>
+						<div class="flex flex-col gap-5 pb-5 border-b-2 border-blue-600">
+							<slot/>
+						</div>
 					</div>
 				</div>
 			</div>

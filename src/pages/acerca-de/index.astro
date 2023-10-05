@@ -5,34 +5,33 @@ import Directory from '../../components/Directory.astro'
 
 <Base title='Acerca de' description='Descubre la historia, visión, misión y valores de nuestra institución educativa, nuestras sedes y nuestro equipo directivo. ¡Lleva al liceo en tu ❤!' url='/acerca-de'>
 <section>
-    <div class="flex flex-col justify-center items-center gap-3 text-center text-blue-950 font-light w-full h-80 min-h-max p-11 md:py-4">
-        <h3 class="text-3xl font-medium md:text-4xl">EL PLANTEL</h3>
-        <p class="text-base md:text-lg md:w-1/2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dicta repellendus quod aspernatur odio eaque officia commodi recusandae nisi eum.</p>
-        <h4 class="text-xl font-medium md:text-2xl"> | <a href="#simbolos" class="text-blue-400">SIMBOLOS</a> | <a href="#directorio" class="text-blue-400">DIRECTORIO</a> | <a href="#sedes" class="text-blue-400">SEDES</a> | <a href="#historia" class="text-blue-400">HISTORIA</a> | </h4>
+    <div class="flex flex-col justify-center items-center gap-10 text-center text-blue-950 w-full md:h-[65vh] p-11">
+        <h3 class="text-3xl md:text-5xl">EL PLANTEL</h3>
+        <p class="text-lg font-light md:w-3/5 leading-relaxed">Somos líderes en educación con mas de 80 años de experiencia. Nuestra misión es formar estudiantes seguros y responsables para el futuro. ¡Únete a nosotros y sé parte del cambio!</p>
     </div>
-    <div class="w-full md:mx-auto md:w-[90%]">
-        <div class="flex flex-col md:flex-row md:min-h-[420px]">
+    <div class="w-full md:flex md:flex-col md:items-center">
+        <div class="flex flex-col md:flex-row md:w-[90%] md:h-[80vh]">
             <div class="bg-[url('https://www.genteactiva.co/wp-content/uploads/2022/04/278416298_1862483340611424_6749959145786114033_n.jpg')] bg-cover w-full h-80 md:w-1/2 md:h-auto">
             </div>
-            <div class="flex flex-col justify-center items-center gap-3 w-full min-h-max p-11 bg-blue-950 text-white text-center md:w-1/2 md:p-12 md:gap-7">
-                <h4 class="text-3xl text-blue-400">Visión</h4>
-                <p class="text-base font-light md:text-lg">A 2027 La I.E.M. Liceo Integrado de Zipaquirá, será reconocida por ofrecer una educación de calidad a la vanguardia de las demandas y retos del siglo XXI, formando ciudadanos éticos que fomenten la productividad y el desarrollo a través del conocimiento</p>
+            <div class="flex flex-col justify-center items-center gap-3 w-full min-h-max p-11 bg-blue-950 text-white text-center md:order-2 md:w-1/2 md:gap-7 md:p-12">
+                <h4 class="text-2xl text-blue-400 md:text-4xl">Visión</h4>
+                <p class="font-light md:w-3/5 leading-loose">A 2027 La I.E.M. Liceo Integrado de Zipaquirá, será reconocida por ofrecer una educación de calidad a la vanguardia de las demandas y retos del siglo XXI, formando ciudadanos éticos que fomenten la productividad y el desarrollo a través del conocimiento.</p>
             </div>
         </div>
-        <div class="flex flex-col md:flex-row md:min-h-[420px]">
-            <div class="bg-[url('/facebook-photo.jpg')] bg-cover w-full h-80 md:order-2 md:w-1/2 md:h-auto">
+        <div class="flex flex-col md:flex-row md:w-[90%] md:h-[80vh]">
+            <div class="bg-[url('/facebook-photo.jpg')] bg-cover order-2 w-full h-80 md:w-1/2 md:h-auto">
             </div>
-            <div class="flex flex-col justify-center items-center gap-3 w-full min-h-max p-11 bg-blue-950 text-white text-center md:w-1/2 md:p-12 md:gap-7">
-                <h4 class="text-3xl text-blue-400">Misión</h4>
-                <p class="text-base font-light md:text-lg">Como institución educativa de carácter oficial, académica, contribuye a formar estudiantes con pensamiento crítico y creativo, a través del desarrollo de habilidades y competencias que aportan a la construcción y <span id="simbolos">desarrollo</span> de su proyecto de vida, fundamentado en valores y filosofía institucional, para trascender en la sociedad.</p>
+            <div class="flex flex-col justify-center items-center gap-3 w-full min-h-max p-11 bg-blue-950 text-white text-center md:w-1/2 md:gap-7 md:p-12">
+                <h4 class="text-2xl text-blue-400 md:text-4xl">Misión</h4>
+                <p class="font-light md:w-3/5 leading-loose">Como institución educativa de carácter oficial, académica, contribuye a formar estudiantes con pensamiento crítico y creativo, a través del desarrollo de habilidades y competencias que aportan a la construcción y <span id="simbolos">desarrollo</span> de su proyecto de vida, fundamentado en valores y filosofía institucional, para trascender en la sociedad.</p>
             </div>
         </div>  
     </div>
 </section>
 <section>
     <div class="flex flex-col justify-center items-center gap-8 text-center text-blue-950 w-full py-11 border-b-2 border-blue-950">
-        <h4 class="text-3xl font-medium">SÍMBOLOS</h4>
-        <div class="flex flex-col w-screen gap-8 md:flex-row md:justify-between md:border-b md:border-blue-950 md:pb-11">
+        <h4 class="text-3xl md:text-5xl mt-20">SÍMBOLOS</h4>
+        <div class="flex flex-row justify-center items-center gap-10 text-center text-blue-950 w-full md:min-h-[65vh] p-11">
             <div class="flex flex-col justify-center items-center h-max w-full gap-6">
                 <img src="https://liceointegrado.edu.co/wp-content/uploads/2018/03/escudo-284x300.png" alt="escudo" class="w-56">
                 <a href="https://liceointegrado.edu.co/wp-content/uploads/2018/03/escudo-284x300.png" class="bg-blue-950 py-1.5 px-6 text-white border border-blue-950 hover:bg-transparent hover:text-blue-950 duration-300">Escudo</a>
@@ -42,35 +41,32 @@ import Directory from '../../components/Directory.astro'
                 <a href="http://liceointegrado.edu.co/wp-content/uploads/2018/03/bandera.jpg" class="bg-blue-950 py-1.5 px-6 text-white border border-blue-950 hover:bg-transparent hover:text-blue-950 duration-300">Bandera</a>
             </div>
         </div>
-        
         <div class="flex flex-col items-center gap-4">
-            <h5 class="text-2xl">Himno</h5>
-            <div>
-                <h6>Coro</h6>
-                <p class="leading-10 font-light">
-                    La virtud, el deber, la sapiencia,<br/>nuestra meta en el claustro ha de ser.<br/>Como guía, la altísima ciencia<br/>para el triunfo al final obtener<br/>gloria a Dios y a la patria querida.<br/>Que el Señor desde arriba nos ve,<br/>gloria eterna a quien diónos la vida<br/>y nos trajo de Cristo la fe. 
-                </p>
+            <h5 class="text-3xl">Himno</h5>
+            <div class="w-full md:flex md:flex-col md:items-center">
+                <div class="flex flex-col md:flex-row md:w-[90%] md:h-[80vh]">
+                    <div class="flex flex-col justify-center items-center gap-3 w-full min-h-max p-11 bg-blue-950 text-white text-center md:order-2 md:w-1/2 md:gap-7 md:p-12">
+                        <h4 class="text-2xl text-blue-400 md:text-4xl">Coro</h4>
+                        <p class="font-light md:w-3/5 leading-loose">La virtud, el deber, la sapiencia,<br/>nuestra meta en el claustro ha de ser.<br/>Como guía, la altísima ciencia<br/>para el triunfo al final obtener<br/>gloria a Dios y a la patria querida.<br/>Que el Señor desde arriba nos ve,<br/>gloria eterna a quien diónos la vida<br/>y nos trajo de Cristo la fe.</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center gap-3 w-full min-h-max p-11 bg-blue-950 text-white text-center md:order-2 md:w-1/2 md:gap-7 md:p-12">
+                        <h4 class="text-2xl text-blue-400 md:text-4xl">I</h4>
+                        <p class="font-light md:w-3/5 leading-loose">Compañeros, alegres marchemos,<br/>que el colegio es risueño vergel<br/>Con tesón y entusiasmo estudiemos<br/>que es la norma de nuestro plantel.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row md:w-[90%] md:h-[80vh]">
+                    <div class="flex flex-col justify-center items-center gap-3 w-full min-h-max p-11 bg-blue-950 text-white text-center md:w-1/2 md:gap-7 md:p-12">
+                        <h4 class="text-2xl text-blue-400 md:text-4xl">II</h4>
+                        <p class="font-light md:w-3/5 leading-loose">De los grandes al lado marchemos,<br/>profesando su credo inmortal,<br/>Y también victoriosos cantemos<br/>Loor por siempre al Liceo Integrado.</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center gap-3 w-full min-h-max p-11 bg-blue-950 text-white text-center md:w-1/2 md:gap-7 md:p-12">
+                        <h4 class="text-2xl text-blue-400 md:text-4xl">III</h4>
+                        <p class="font-light md:w-3/5 leading-loose">¡Salve tierra de próceres cuna,<br/><span id="directorio">tierra</span> buena y tesoro de sal,<br/>como tu no acaso ninguna,<br/>do se colma ansiado ideal! </p>
+                        <h5 class="font-light"><i>Guillermo Quevedo Zornosa</i></h5>
+                        <button class="bg-blue-950 py-1.5 px-4 w-max text-white border border-blue-950 hover:bg-transparent hover:text-blue-950 duration-300">Reproducir</button>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h6>I</h6>
-                <p class="leading-10 font-light">
-                    Compañeros, alegres marchemos,<br/>que el colegio es risueño vergel<br/>Con tesón y entusiasmo estudiemos<br/>que es la norma de nuestro plantel 
-                </p>
-            </div>
-            <div>
-                <h6>II</h6>
-                <p class="leading-10 font-light">
-                    De los grandes al lado marchemos,<br/>profesando su credo inmortal,<br/>Y también victoriosos cantemos<br/>Loor por siempre al Liceo Integrado 
-                </p>
-            </div>
-            <div>
-                <h6>III</h6>
-                <p class="leading-10 font-light">
-                    ¡Salve tierra de próceres cuna,<br/><span id="directorio">tierra</span> buena y tesoro de sal,<br/>como tu no acaso ninguna,<br/>do se colma ansiado ideal! 
-                </p>
-            </div>
-            <h5 class="font-light"><i>Guillermo Quevedo Zornosa</i></h5>
-            <button class="bg-blue-950 py-1.5 px-4 w-max text-white border border-blue-950 hover:bg-transparent hover:text-blue-950 duration-300">Reproducir</button>
         </div>
     </div>
 </section>
