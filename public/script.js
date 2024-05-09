@@ -1,5 +1,3 @@
-var nivel = 3;
-var infoLevel;
 const metaElement = document.querySelector('meta[name=csrf-token]');
 const token = metaElement.getAttribute('content');
 const headers = {
@@ -22,6 +20,12 @@ const sender_name = "Logandi Bölvun";
 const sender_portrait_url = "https://s3-eu-west-2.amazonaws.com/dungeon20/images/1924992/medium-d32b3a924fb4e5e7e20997887bd30024a6f9f1b0.png?1714227095";
 const questu = "https://nivel20.com/room_messages";
 const method = "POST";
+let nivel = 3;
+let infoLevel;
+let guardia = false;
+let ilusion = false;
+let mano = false;
+let esc = false;
 
 function iniciar() {
   infoLevel = [
@@ -268,11 +272,6 @@ function hechizos() {
   const manoMago = document.getElementById("manoMago");
   const escudo = document.getElementById("escudo");
   const pasoBrumoso = document.getElementById("pasoBrumoso");
-
-  let guardia = false;
-  let ilusion = false;
-  let mano = false;
-  let esc = false;
 
   guardiaCuchillas.addEventListener("click", () => {
     guardia = !guardia;
