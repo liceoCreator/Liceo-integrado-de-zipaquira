@@ -1,6 +1,5 @@
 var nivel = 3;
 var infoLevel;
-alert('Buenas noches Joe');
 const metaElement = document.querySelector('meta[name=csrf-token]');
 const token = metaElement.getAttribute('content');
 const headers = {
