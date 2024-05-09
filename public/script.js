@@ -305,8 +305,8 @@ function hechizos() {
         sender_name,
         sender_portrait_url,
       }),
-    });
-    fetch('https://s3-eu-west-2.amazonaws.com/dungeon20/images/86/medium-f80e36f12565902b24b7ccdacd9e8a264a2e8cc6.png?1637056627');
+    })
+      .then(fetch('https://s3-eu-west-2.amazonaws.com/dungeon20/images/86/medium-f80e36f12565902b24b7ccdacd9e8a264a2e8cc6.png?1637056627');)
   });
 
   iluMenor.addEventListener("click", () => {
