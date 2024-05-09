@@ -1,12 +1,13 @@
 var nivel = 3;
 var infoLevel;
+const metaElement = document.querySelector('meta[name=csrf-token]');
+const token = metaElement.getAttribute('content');
 const headers = {
   "Accept-Encoding": "gzip, deflate, br, zstd",
   "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
   Connection: "keep-alive",
   "Content-Type": "application/json",
-  "X-Csrf-Token":
-    "4kXcioKsQOGOfylUCiEeMNUt8frQZAZgwRdTYj7hyHn5VxaQBUgGCHS79h5srzBwIrPAmhXf7J5/Q9F1n9WFOQ==",
+  "X-Csrf-Token": token,
   "X-Requested-With": "XMLHttpRequest",
 }
 const user_id = 248542;
